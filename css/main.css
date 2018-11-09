@@ -594,12 +594,16 @@ p {
   color: lightblue;
   font-size: 1em;
   background: pink;
-  border: 1px red solid;
   display: block;
 }
 
 div {
   background: white;
   color: orange;
+}
+
+header h1 {
+  font-size: calc(1em + 5vmin);
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */
