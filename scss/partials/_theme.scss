@@ -3,24 +3,27 @@ html {
 }
 body {
   background: salmon;
+  text-align: center;
 }
 main {
     background: lightyellow;
 }
 p {
-    color:lightblue;
+    // color:lightblue;
     font-size: 1em;
-    background: pink;
+    // background: pink;
     display: block;
 
 
 }
 div{
     background: white;
+
     color: orange;
 }
 header {
+    padding: 1em;
     h1{
-    color: red;
+    // color: lightyellow;
     }
 }

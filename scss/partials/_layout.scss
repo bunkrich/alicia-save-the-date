@@ -8,13 +8,13 @@ $desktop-width: 992px;
 $large-width: 1200px;
 
 @mixin phone {
-    @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+    @media (min-width: #{$phone-width}){
         @content;
     }
 }
 
 @mixin tablet {
-    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @media (min-width: #{$tablet-width}) {
         @content;
     }
 }
@@ -32,7 +32,7 @@ $large-width: 1200px;
 }
 
 @mixin desktop {
-    @media (min-width: #{$desktop-width}) and (max-width: #{$large-width - 1px}) {
+    @media (min-width: #{$desktop-width}) {
         @content;
     }
 }
@@ -45,7 +45,10 @@ $large-width: 1200px;
 
 
 header {
+    font-family: 'Great Vibes', cursive;
 margin: auto;
+// height: 100vh;
+max-width: 90%;
     @include phone {
         max-width: 100%;
         h1 {
@@ -55,16 +58,30 @@ margin: auto;
 
     @include tablet {
         max-width: 90%;
-        font-size: calc(1em + 5vmin);
+        h1 { font-size: calc(1em + 5vmin);}
     }
 
     @include desktop {
-        max-width: 500px;
-        font-size: calc(1em + 10vmin);
+        // max-width: 500px;
+        // font-size: calc(1em + 10vmin);
+        color: ÷yellow;
     }
 
     @include large {
-        max-width: 50%;
-        font-size: 10vmax;
+        // max-width: 50%;
+        h1 { font-size: 10vmax;}
     }
 }
+
+
+
+#ex1 { font-family: 'Great Vibes', cursive;}
+#ex2 { font-family: 'Dancing Script', cursive;}
+#ex3 { font-family: 'Pacifico', cursive;}
+#ex4 { font-family: 'Sacramento', cursive;}
+#ex5 { font-family: 'Parisienne', cursive;}
+#ex6 { font-family: 'Rochester', cursive;}
+#ex7 { font-family: 'Amatic SC', cursive;}
+#ex8 { font-family: 'Cookie', cursive;}
+#ex9 { font-family: 'Clicker Script', cursive;}
+#ex10 { font-family: 'Engagement', cursive;}
