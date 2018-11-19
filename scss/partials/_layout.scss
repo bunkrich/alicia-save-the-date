@@ -100,3 +100,7 @@ width: 100%;
 height: 100vh;
 object-fit: cover;
 }
+html {
+    // your css to create a cover image 
+    padding: env(safe-area-inset); // <- this is the missing piece. Add it.
+  }
