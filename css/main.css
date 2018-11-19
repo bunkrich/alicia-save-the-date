@@ -659,6 +659,22 @@ header {
   font-family: 'Engagement', cursive;
 }
 
+#ex11 {
+  font-family: 'Playfair Display', serif;
+}
+
+#ex12 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+#ex13 {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+#ex14 {
+  font-family: 'Lobster Two', cursive;
+}
+
 html {
   background: lightgreen;
 }
