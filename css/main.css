@@ -697,11 +697,9 @@ html {
   color: #F7E1D7;
 }
 
-html {
-  background: #F7E1D7;
-}
-
 body {
+  font-family: 'Amatic SC', cursive;
+  font-size: 150%;
   background: #EF6F6C;
   text-align: center;
 }
@@ -782,6 +780,19 @@ nav div {
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
+  color: #394055;
+  padding: 1em;
+}
+
+summary {
+  font-size: 2em;
+}
+
+details {
+  background: #F9ADA0;
+  padding: 1em;
+  margin: 1em auto;
+  max-width: 90%;
   color: #394055;
 }
 /*# sourceMappingURL=main.css.map */

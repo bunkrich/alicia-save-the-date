@@ -1,7 +1,9 @@
 html {
-    background: $tan;
+    // background: $tan;
 }
 body {
+    font-family: 'Amatic SC', cursive;
+    font-size: 150%;
   background: $coral;
   text-align: center;
 }
@@ -21,8 +23,6 @@ div{
 }
 header {
     padding: 1em;
-    h1{
-    }
 }
 
 .bk-navy {background: $navy; color: white;}
@@ -39,21 +39,24 @@ header {
 
 nav {
     display:flex;
-flex-wrap:wrap;
+    flex-wrap:wrap;
 
 div {
     flex: 1 1;
     color: $navy;
+    padding:1em;
 }
 }
-$navy: #394055;
-$green: #5B7761;
-$gray: #ACAEAB;
-$white: #F5F5F5;
-$hunter: #172121;
-$tan: #F7E1D7;
-$peach: #F9ADA0;
-$coral: #EF6F6C;
-$peony: #CC7178;
-$pale: #EDAFB8;
-$pink: #FE938C;
+
+
+summary {
+
+    font-size: 2em;
+}
+details {
+    background: $peach;
+    padding: 1em;
+    margin: 1em auto;
+    max-width: 90%;
+    color: $navy;
+}
