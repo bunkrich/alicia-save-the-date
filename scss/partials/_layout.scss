@@ -49,7 +49,7 @@ header {
 margin: auto;
 // height: 100vh;
 max-width: 90%;
-color: gray;
+color: $gray;
     @include phone {
         max-width: 100%;
         h1 {
@@ -91,12 +91,9 @@ color: gray;
 #ex13 {font-family: 'Didact Gothic', sans-serif;}
 #ex14 {font-family: 'Lobster Two', cursive;}
 
-nav{
-    // width: 100%;
-    // height: 100vh;
-}
+
 nav img{
-    // display:block;
+
 width: 100%;
 height: 100vh;
 object-fit: cover;
@@ -107,10 +104,11 @@ html {
   }
 
   .yes {
-      color:black;
+      color:  $navy;
+      background: $tan;
   }
 
   .no {
     text-decoration: line-through;
-    color: lightgray;
+    color: $tan;
   }

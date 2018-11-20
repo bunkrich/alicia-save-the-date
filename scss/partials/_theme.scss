@@ -1,17 +1,15 @@
 html {
-    background: lightgreen;
+    background: $tan;
 }
 body {
-  background: salmon;
+  background: $coral;
   text-align: center;
 }
 main {
-    background: lightyellow;
+    background: $peony;
 }
 p {
-    // color:lightblue;
     font-size: 1em;
-    // background: pink;
     display: block;
 
 
@@ -19,11 +17,43 @@ p {
 div{
     background: white;
 
-    color: orange;
+    color: $pink;
 }
 header {
     padding: 1em;
     h1{
-    // color: lightyellow;
     }
 }
+
+.bk-navy {background: $navy; color: white;}
+.bk-green {background: $green}
+.bk-gray {background: $gray}
+.bk-white {background: $white}
+.bk-hunter {background: $hunter; color: white;}
+.bk-tan {background: $tan}
+.bk-peach {background: $peach}
+.bk-coral {background: $coral}
+.bk-peony {background: $peony}
+.bk-pale {background: $pale}
+.bk-pink {background: $pink}
+
+nav {
+    display:flex;
+flex-wrap:wrap;
+
+div {
+    flex: 1 1;
+    color: $navy;
+}
+}
+$navy: #394055;
+$green: #5B7761;
+$gray: #ACAEAB;
+$white: #F5F5F5;
+$hunter: #172121;
+$tan: #F7E1D7;
+$peach: #F9ADA0;
+$coral: #EF6F6C;
+$peony: #CC7178;
+$pale: #EDAFB8;
+$pink: #FE938C;

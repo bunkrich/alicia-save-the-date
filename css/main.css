@@ -587,7 +587,7 @@ header {
   font-family: 'Great Vibes', cursive;
   margin: auto;
   max-width: 90%;
-  color: gray;
+  color: #ACAEAB;
 }
 
 @media (min-width: 576px) {
@@ -688,25 +688,26 @@ html {
 }
 
 .yes {
-  color: black;
+  color: #394055;
+  background: #F7E1D7;
 }
 
 .no {
   text-decoration: line-through;
-  color: lightgray;
+  color: #F7E1D7;
 }
 
 html {
-  background: lightgreen;
+  background: #F7E1D7;
 }
 
 body {
-  background: salmon;
+  background: #EF6F6C;
   text-align: center;
 }
 
 main {
-  background: lightyellow;
+  background: #CC7178;
 }
 
 p {
@@ -716,10 +717,71 @@ p {
 
 div {
   background: white;
-  color: orange;
+  color: #FE938C;
 }
 
 header {
   padding: 1em;
+}
+
+.bk-navy {
+  background: #394055;
+  color: white;
+}
+
+.bk-green {
+  background: #5B7761;
+}
+
+.bk-gray {
+  background: #ACAEAB;
+}
+
+.bk-white {
+  background: #F5F5F5;
+}
+
+.bk-hunter {
+  background: #172121;
+  color: white;
+}
+
+.bk-tan {
+  background: #F7E1D7;
+}
+
+.bk-peach {
+  background: #F9ADA0;
+}
+
+.bk-coral {
+  background: #EF6F6C;
+}
+
+.bk-peony {
+  background: #CC7178;
+}
+
+.bk-pale {
+  background: #EDAFB8;
+}
+
+.bk-pink {
+  background: #FE938C;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  color: #394055;
 }
 /*# sourceMappingURL=main.css.map */
