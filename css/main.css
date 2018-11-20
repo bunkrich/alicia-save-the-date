@@ -587,6 +587,7 @@ header {
   font-family: 'Great Vibes', cursive;
   margin: auto;
   max-width: 90%;
+  color: gray;
 }
 
 @media (min-width: 576px) {
@@ -684,6 +685,15 @@ nav img {
 
 html {
   padding: env(safe-area-inset);
+}
+
+.yes {
+  color: black;
+}
+
+.no {
+  text-decoration: line-through;
+  color: lightgray;
 }
 
 html {

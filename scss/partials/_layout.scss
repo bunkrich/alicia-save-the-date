@@ -49,6 +49,7 @@ header {
 margin: auto;
 // height: 100vh;
 max-width: 90%;
+color: gray;
     @include phone {
         max-width: 100%;
         h1 {
@@ -103,4 +104,13 @@ object-fit: cover;
 html {
     // your css to create a cover image 
     padding: env(safe-area-inset); // <- this is the missing piece. Add it.
+  }
+
+  .yes {
+      color:black;
+  }
+
+  .no {
+    text-decoration: line-through;
+    color: lightgray;
   }
