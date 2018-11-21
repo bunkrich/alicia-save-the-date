@@ -20,34 +20,40 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="body">
+<body>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Add your site or application content here -->
+  <header class="header">
+    <div id="background-img">
 
-<div id="background-img">
-      
-  <picture>
-          <source media="(max-width: 320px)" srcset="img/background-wide.jpg">
-          <source media="(min-width: 375px)" srcset="img/background-tall.jpg">
-    
-          <img src="img/bkgr.3840.jpeg" alt="Flowers">
-        </picture>
+      <picture>
+        <source media="(max-width: 500px)" srcset="img/background-wide.jpg">
+        <source media="(min-width: 501px)" srcset="img/background-tall.jpg">
+
+        <img src="img/bkgr.3840.jpeg" alt="Flowers">
+      </picture>
     </div>
-  <header id="ex2 header" class="yes">
-    <h1>Save the Date</h1>
-    <h3>Saturday, June 1st, 2019</h3>
-    <h4>Mount Pleasant, Iowa</h4>
-    <p>6-1-2019</p>
-    <p>Alicia & Alex</p>
+    <div id="header" class="yes">
+      <h1>Alicia & Alex</h1>
+      <h3>6.1.2019</h3>
+    </div>
   </header>
 
 
-  <main>
-
+  <main id="STD">
+    <h1>Save the Date</h1>
+    <h2>Saturday, June 1st, 2019</h2>
+    <h3>Mount Pleasant, Iowa</h3>
   </main>
+  <div id="STD2">
+      <h1>comming soon...</h1>
+  </div>
+  <div id="STD3">
+        <h1>comming soon...</h1>
+    </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>

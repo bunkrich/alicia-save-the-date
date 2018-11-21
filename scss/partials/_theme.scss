@@ -4,27 +4,53 @@ html {
 body {
     font-family: 'Amatic SC', cursive;
     font-size: 150%;
-  background: $coral;
+
   text-align: center;
 }
-main {
-    background: $peony;
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, $tan, $pale, $peach, $pink, $coral, $peony);
+	background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
 }
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 p {
     font-size: 1em;
     display: block;
 
 
 }
-div{
-    background: white;
 
-    color: $pink;
-}
-header {
-    padding: 1em;
+.yes {
+    color:  $navy;
+    background: $tan;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1, h2, h3, p {
+        margin: 0;
+    }
 }
 
+.no {
+  text-decoration: line-through;
+  color: $tan;
+}
 .bk-navy {background: $navy; color: white;}
 .bk-green {background: $green}
 .bk-gray {background: $gray}
@@ -37,16 +63,16 @@ header {
 .bk-pale {background: $pale}
 .bk-pink {background: $pink}
 
-nav {
-    display:flex;
-    flex-wrap:wrap;
+// nav {
+//     display:flex;
+//     flex-wrap:wrap;
 
-div {
-    flex: 1 1;
-    color: $navy;
-    padding:1em;
-}
-}
+// div {
+//     flex: 1 1;
+//     color: $navy;
+//     padding:1em;
+// }
+// }
 
 
 summary {
@@ -60,3 +86,18 @@ details {
     max-width: 90%;
     color: $navy;
 }
+
+#ex1 { font-family: 'Great Vibes', cursive;}
+#ex2 { font-family: 'Dancing Script', cursive;}
+#ex3 { font-family: 'Pacifico', cursive;}
+#ex4 { font-family: 'Sacramento', cursive;}
+#ex5 { font-family: 'Parisienne', cursive;}
+#ex6 { font-family: 'Rochester', cursive;}
+#ex7 { font-family: 'Amatic SC', cursive;}
+#ex8 { font-family: 'Cookie', cursive;}
+#ex9 { font-family: 'Clicker Script', cursive;}
+#ex10 { font-family: 'Engagement', cursive;}
+#ex11 {font-family: 'Playfair Display', serif;}
+#ex12 {font-family: 'Abril Fatface', cursive;}
+#ex13 {font-family: 'Didact Gothic', sans-serif;}
+#ex14 {font-family: 'Lobster Two', cursive;}

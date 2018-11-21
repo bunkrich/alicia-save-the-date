@@ -1,141 +1,109 @@
 header {
-    background: white;
+  font-family: 'Great Vibes', cursive;
+  // margin: auto;
+  // height: 100vh;
+  // max-width: 90%;
+  // color: $gray;
+  @include phone {
+    // max-width: 100%;
+    h1 {
+    //   font-size: 1em;
+    }
+  }
+
+  @include tablet {
+    // max-width: 90%;
+    // h1 {
+    //   font-size: calc(1em + 5vmin);
+    // }
+  }
+
+  @include desktop {
+    // max-width: 500px;
+    // font-size: calc(1em + 10vmin);
+    // color: ÷yellow;
+  }
+
+  @include large {
+    // max-width: 50%;
+    // h1 {
+    //   font-size: 10vw;
+    // }
+  }
 }
-
-$phone-width: 576px;
-$tablet-width: 768px;
-$desktop-width: 992px;
-$large-width: 1200px;
-
-@mixin phone {
-    @media (min-width: #{$phone-width}){
-        @content;
-    }
-}
-
-@mixin tablet {
-    @media (min-width: #{$tablet-width}) {
-        @content;
-    }
-}
-
-@mixin small-medium-size {
-    @media (min-width: #{$tablet-width}) {
-        @content;
-    }
-}
-
-@mixin medium-size {
-    @media (min-width: #{$desktop-width}) {
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media (min-width: #{$desktop-width}) {
-        @content;
-    }
-}
-
-@mixin large {
-    @media (min-width: #{$large-width}) {
-        @content;
-    }
-}
-
-
-header{
-    font-family: 'Great Vibes', cursive;
-margin: auto;
-// height: 100vh;
-max-width: 90%;
-color: $gray;
-    @include phone {
-        max-width: 100%;
-        h1 {
-            font-size: 1em;
-        }
-    }
-
-    @include tablet {
-        max-width: 90%;
-        h1 { font-size: calc(1em + 5vmin);}
-    }
-
-    @include desktop {
-        // max-width: 500px;
-        // font-size: calc(1em + 10vmin);
-        color: ÷yellow;
-    }
-
-    @include large {
-        // max-width: 50%;
-        h1 { font-size: 10vmax;}
-    }
-}
-
-
-
-#ex1 { font-family: 'Great Vibes', cursive;}
-#ex2 { font-family: 'Dancing Script', cursive;}
-#ex3 { font-family: 'Pacifico', cursive;}
-#ex4 { font-family: 'Sacramento', cursive;}
-#ex5 { font-family: 'Parisienne', cursive;}
-#ex6 { font-family: 'Rochester', cursive;}
-#ex7 { font-family: 'Amatic SC', cursive;}
-#ex8 { font-family: 'Cookie', cursive;}
-#ex9 { font-family: 'Clicker Script', cursive;}
-#ex10 { font-family: 'Engagement', cursive;}
-#ex11 {font-family: 'Playfair Display', serif;}
-#ex12 {font-family: 'Abril Fatface', cursive;}
-#ex13 {font-family: 'Didact Gothic', sans-serif;}
-#ex14 {font-family: 'Lobster Two', cursive;}
-
-
 
 html {
-    // your css to create a cover image 
-    padding: env(safe-area-inset); // <- this is the missing piece. Add it.
-  }
+  // your css to create a cover image 
+  padding: env(safe-area-inset); // <- this is the missing piece. Add it.
+}
 
-  .yes {
-      color:  $navy;
-      background: $tan;
-  }
 
-  .no {
-    text-decoration: line-through;
-    color: $tan;
-  }
+body {
+  scroll-snap-type: y proximity;
+}
 
-  body.body {
-      display: grid;
-      grid-template: 1 /1 ;
-       #background-img {
-          grid-area: 1 / 1;
-          color: white;
-          background: none;
-        }
-        header {
-            grid-area: 1 / 1;
-            // color: red;
-            // font-size: 200%;
-            background: none;
-            opacity: .9;
-            color: white;
-        }
-        #TEST {
-            grid-area: 1 / 1;
-            opacity: .9;
-            background: black;
-            color: white;
-        }
-  }
-  #background-img img{
-
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    // filter:blur(19px);
-
+nav {
+    h1 {
+        flex: 1 0 100%;
+        margin: 0;
+padding: 1em 0;
+color:$navy;
     }
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    div {
+        flex: 1 1 100px;
+        padding: 0 1em;
+    }
+}
+.header {
+  scroll-snap-align: start;
+  max-height: 100vh;
+  overflow-y: scroll;
+  display: grid;
+  grid-template: 1 /1;
+  #background-img {
+    grid-area: 1 / 1;
+    color: white;
+    background: none;
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+  #header {
+    grid-area: 1 / 1;
+    background: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        margin:0;
+        font-size: 16vw;
+    }
+    h3{
+        margin:0;
+        font-size: 10vw;
+    }
+  }
+}
+
+#STD, #STD2, #STD3 {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1, h2, h3 {
+
+  }
+}
+#STD2 {
+    background: $navy;
+}
+#STD3 {
+
+}
