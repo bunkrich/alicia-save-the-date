@@ -712,6 +712,7 @@ body.body header {
   grid-area: 1 / 1;
   background: none;
   opacity: .9;
+  color: white;
 }
 
 body.body #TEST {
@@ -728,8 +729,6 @@ body.body #TEST {
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: blur(19px);
-          filter: blur(19px);
 }
 
 body {
