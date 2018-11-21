@@ -676,13 +676,6 @@ header {
   font-family: 'Lobster Two', cursive;
 }
 
-nav img {
-  width: 100%;
-  height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 html {
   padding: env(safe-area-inset);
 }
@@ -695,6 +688,48 @@ html {
 .no {
   text-decoration: line-through;
   color: #F7E1D7;
+}
+
+body.body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1;
+  -ms-grid-columns: 1;
+      grid-template: 1 /1;
+}
+
+body.body #background-img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1 / 1;
+  color: white;
+  background: none;
+}
+
+body.body header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1 / 1;
+  background: none;
+  opacity: .9;
+}
+
+body.body #TEST {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1 / 1;
+  opacity: .9;
+  background: black;
+  color: white;
+}
+
+#background-img img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: blur(19px);
+          filter: blur(19px);
 }
 
 body {
