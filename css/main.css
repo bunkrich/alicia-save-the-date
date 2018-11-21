@@ -640,9 +640,38 @@ body {
   font-size: 10vw;
 }
 
-body {
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, auto) minmax(auto, 800px) auto;
+      grid-template-columns: minmax(0, auto) minmax(auto, 800px) auto;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
+main > .main {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  background: #FE938C;
+  margin: 2em -1em;
+  border: 1px #CC7178 solid;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(0 0 30px #333);
+          filter: drop-shadow(0 0 30px #333);
+}
+
+#AA {
   font-family: 'Amatic SC', cursive;
-  font-size: 150%;
+  font-size: 50vw;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
   text-align: center;
   height: 90vh;
   color: #F5F5F5;
@@ -650,6 +679,18 @@ body {
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
           animation: Gradient 15s ease infinite;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+header {
+  font-size: 200%;
 }
 
 @-webkit-keyframes Gradient {
@@ -778,6 +819,7 @@ body {
 
 #ex8 {
   font-family: 'Cookie', cursive;
+  color: blue;
 }
 
 #ex9 {
@@ -856,9 +898,5 @@ details {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#STD2 {
-  background: #394055;
 }
 /*# sourceMappingURL=main.css.map */

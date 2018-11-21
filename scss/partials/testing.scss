@@ -33,13 +33,15 @@
 #ex5 { font-family: 'Parisienne', cursive;}
 #ex6 { font-family: 'Rochester', cursive;}
 #ex7 { font-family: 'Amatic SC', cursive;}
-#ex8 { font-family: 'Cookie', cursive;}
+#ex8 { font-family: 'Cookie', cursive; color: blue;}
 #ex9 { font-family: 'Clicker Script', cursive;}
 #ex10 { font-family: 'Engagement', cursive;}
 #ex11 {font-family: 'Playfair Display', serif;}
 #ex12 {font-family: 'Abril Fatface', cursive;}
 #ex13 {font-family: 'Didact Gothic', sans-serif;}
 #ex14 {font-family: 'Lobster Two', cursive;}
+
+
 
 summary {
 
@@ -119,5 +121,5 @@ header {
 }
 
 #STD2 {
-  background: $navy;
+//   background: $navy;
 }

@@ -1,12 +1,23 @@
 body {
-  font-family: 'Amatic SC', cursive;
-  font-size: 150%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
   text-align: center;
   height: 90vh;
   color: $white;
   background: linear-gradient(-45deg, $tan, $pale, $peach, $pink, $coral, $peony);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Amatic SC', cursive;
+}
+h1 {
+    font-weight: bold;
+}
+
+header {
+    font-size: 200%;
 }
 
 @keyframes Gradient {
