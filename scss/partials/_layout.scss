@@ -4,15 +4,15 @@ html {
 }
 
 body {
-  scroll-snap-type: y proximity;
+  // scroll-snap-type: y proximity;
 }
 
 .header {
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
+  // overflow-y: scroll;
   max-height: 100vh;
-  overflow-y: scroll;
   display: grid;
-  grid-template: 1 /1;
+  grid-template: 1 / 1;
 
   #background-img {
     grid-area: 1 / 1;
@@ -42,31 +42,4 @@ body {
       font-size: 10vw;
     }
   }
-}
-
-main{
-  display: grid;
-  grid-template-columns: minmax(0,auto) minmax(auto,800px) auto;
-  grid-template-rows: auto 1fr auto;
-  
-}
-main > .main {
-grid-column: 2;
-background: $pink;
-margin: 2em -1em;
-border: 1px $peony solid;
-border-radius: 20px;
-filter: drop-shadow(0 0 30px #333);
-
-}
-// .dump {
-//   grid-column: 2;
-//   background: $peach;
-// }
-
-#AA{
-  font-family: 'Amatic SC', cursive;
-  font-size: 50vw;
-  grid-column: 2;
-  grid-row: 3;
 }
