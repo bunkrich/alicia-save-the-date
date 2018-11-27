@@ -23,7 +23,12 @@ h1 {
 }
 
 header {
-    font-size: 200%;
+    // font-size: 200%;
+}
+body > {
+    header,nav,main,section,footer {
+        border: 1px solid yellow;
+    }
 }
 
 @keyframes Gradient {
