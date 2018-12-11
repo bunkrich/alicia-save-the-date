@@ -1,3 +1,29 @@
+:root {
+  --navy: #394055;
+  --green: #5B7761;
+  --gray: #ACAEAB;
+  --white: #F5F5F5;
+  --hunter: #172121;
+  --tan: #F7E1D7;
+  --peach: #F9ADA0;
+  --coral: #EF6F6C;
+  --peony: #CC7178;
+  --pale: #EDAFB8;
+  --pink: #FE938C;
+  --main-color: var(--navy);
+  --main-color-soft: var(--navy);
+  --main-color-hard: var(--navy);
+  --accent-color: var(--pale);
+  --accent-color-soft: var(--navy);
+  --accent-color-hard: var(--navy);
+  --pop-color: var(--navy);
+  --pop-color-soft: var(--navy);
+  --pop-color-hard: var(--navy);
+  --back-color: var(--tan);
+  --back-color-soft: var(--navy);
+  --back-color-hard: var(--navy);
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -606,6 +632,7 @@ html {
 }
 
 .header #header {
+  background: orange;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: 1 / 1;
@@ -627,11 +654,6 @@ body {
   font-weight: 100;
   text-align: center;
   height: 90vh;
-  color: #F5F5F5;
-  background: linear-gradient(-45deg, #F7E1D7, #EDAFB8, #F9ADA0, #FE938C, #EF6F6C, #CC7178);
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 15s ease infinite;
-          animation: Gradient 15s ease infinite;
 }
 
 h1,
@@ -645,33 +667,95 @@ h6 {
 
 h1 {
   font-weight: bold;
+  color: white;
 }
 
-body > header, body > nav, body > main, body > section, body > footer {
-  border: 1px solid yellow;
+#main-nav {
+  --main-color: navy;
+  --back-color: skyblue;
+  --accent-color: lightgreen;
+  --pop-color: coral;
+  --border: 2px solid transparent;
 }
 
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
+#main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main-nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-nav a {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+@media all and (min-width: 701px) {
+  #main-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+  #main-nav li {
+    padding: .5em 0;
+    margin: 0 .5em;
+    border-bottom: var(--border);
   }
 }
 
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
+@media all and (max-width: 700px) {
+  #main-nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-  50% {
-    background-position: 100% 50%;
+  #main-nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: var(--back-color);
   }
-  100% {
-    background-position: 0% 50%;
+  #main-nav li {
+    margin: .5em 0;
+    border-left: var(--border);
+  }
+  #main-nav a {
+    margin-left: 1em;
+    min-width: 10em;
+    text-align: left;
+  }
+}
+
+#main-nav li:hover {
+  border-color: var(--pop-color);
+}
+
+#main-nav li:hover a {
+  color: var(--main-color);
+}
+
+@media all and (max-width: 700px) {
+  #main-nav li:hover a {
+    font-weight: 900;
   }
 }
 
@@ -691,7 +775,6 @@ body > header, body > nav, body > main, body > section, body > footer {
           flex: 1 0 100%;
   margin: 0;
   padding: 1em 0;
-  color: #394055;
 }
 
 #colors div {
@@ -844,7 +927,6 @@ details {
 #STD,
 #STD2,
 #STD3 {
-  scroll-snap-align: start;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -856,5 +938,9 @@ details {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#testT {
+  background: yellow;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,11 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    text-align: center;
-    height: 90vh;
-    color: $white;
-    background: linear-gradient(-45deg, $tan, $pale, $peach, $pink, $coral, $peony);
-    background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  height: 90vh; // color: $white;
+  // background: linear-gradient(-45deg, $tan, $pale, $peach, $pink, $coral, $peony);
+  // background-size: 400% 400%;
+  // animation: Gradient 15s ease infinite;
 }
 
 h1,
@@ -15,31 +14,100 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', cursive;
 }
 
 h1 {
-    font-weight: bold;
+  font-weight: bold;
+  color: white;
 }
 
-header {
-    // font-size: 200%;
-}
-body > {
-    header,nav,main,section,footer {
-        border: 1px solid yellow;
-    }
+// @keyframes Gradient {
+//     0% {
+//         background-position: 0% 50%
+//     }
+//     50% {
+//         background-position: 100% 50%
+//     }
+//     100% {
+//         background-position: 0% 50%
+//     }
+// }
+
+$break-nav: 700px;
+
+@mixin nav-sm {
+  @media all and (max-width: $break-nav) {
+    @content;
+  }
 }
 
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
+@mixin nav-lg {
+  @media all and (min-width: $break-nav + 1) {
+    @content;
+  }
 }
 
+
+#main-nav {
+  --main-color: navy;
+  --back-color: skyblue;
+  --accent-color: lightgreen;
+  --pop-color: coral;
+  --border: 2px solid transparent;
+}
+
+#main-nav {
+  display: flex;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    display: flex;
+  }
+  a {
+    transition: all .5s;
+    text-decoration: none;
+    color: var(--accent-color);
+  }
+
+  @include nav-lg {
+    justify-content: center;
+    li {
+      padding: .5em 0;
+      margin: 0 .5em;
+      border-bottom: var(--border);
+    }
+  }
+
+  @include nav-sm {
+    justify-content: flex-end;
+    ul {
+      flex-direction: column;
+      background: var(--back-color);
+    }
+    li {
+      margin: .5em 0;
+      border-left: var(--border);
+    }
+    a {
+      margin-left: 1em;
+      min-width: 10em;
+      text-align: left;
+    }
+  }
+
+  li:hover {
+    border-color: var(--pop-color);
+    a {
+      color: var(--main-color);
+      @include nav-sm {
+        font-weight: 900;
+      }
+    }
+  }
+}

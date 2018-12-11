@@ -13,7 +13,6 @@ body {
   max-height: 100vh;
   display: grid;
   grid-template: 1 / 1;
-
   #background-img {
     grid-area: 1 / 1;
     background: none;
@@ -26,6 +25,7 @@ body {
   }
 
   #header {
+    background: orange;
     grid-area: 1 / 1;
     background: none;
     // display: flex;
