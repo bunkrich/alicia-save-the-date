@@ -1,9 +1,20 @@
+$navy: #394055;
+$green: #5B7761;
+$gray: #ACAEAB;
+$white: #F5F5F5;
+$hunter: #172121;
+$tan: #F7E1D7;
+$peach: #F9ADA0;
+$coral: #EF6F6C;
+$peony: #CC7178;
+$pale: #EDAFB8;
+$pink: #FE938C;
+
 #colors {
     h1 {
       flex: 1 0 100%;
       margin: 0;
       padding: 1em 0;
-      color: $navy;
     }
   
     display: flex;
@@ -72,48 +83,13 @@ details {
   color: $tan;
 }
 
-header {
-    // font-family: 'Great Vibes', cursive;
-  
-    // margin: auto;
-    // height: 100vh;
-    // max-width: 90%;
-    // color: $gray;
-    @include phone {
-  
-      // max-width: 100%;
-      h1 {
-        //   font-size: 1em;
-      }
-    }
-  
-    @include tablet {
-      // max-width: 90%;
-      // h1 {
-      //   font-size: calc(1em + 5vmin);
-      // }
-    }
-  
-    @include desktop {
-      // max-width: 500px;
-      // font-size: calc(1em + 10vmin);
-      // color: ÷yellow;
-    }
-  
-    @include large {
-      // max-width: 50%;
-      // h1 {
-      //   font-size: 10vw;
-      // }
-    }
-  }
 
 
 
 #STD,
 #STD2,
 #STD3 {
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
   height: 100vh;
   display: flex;
   flex-direction: column;

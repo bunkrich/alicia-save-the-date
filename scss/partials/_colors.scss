@@ -9,3 +9,34 @@ $coral: #EF6F6C;
 $peony: #CC7178;
 $pale: #EDAFB8;
 $pink: #FE938C;
+
+
+
+:root {
+
+--navy: #394055;
+--green: #5B7761;
+--gray: #ACAEAB;
+--white: #F5F5F5;
+--hunter: #172121;
+--tan: #F7E1D7;
+--peach: #F9ADA0;
+--coral: #EF6F6C;
+--peony: #CC7178;
+--pale: #EDAFB8;
+--pink: #FE938C;
+
+--main-color: var(--navy);
+--main-color-soft: var(--navy);
+--main-color-hard: var(--navy);
+--accent-color: var(--pale);
+--accent-color-soft: var(--navy);
+--accent-color-hard: var(--navy);
+--pop-color: var(--navy);
+--pop-color-soft: var(--navy);
+--pop-color-hard: var(--navy);
+--back-color: var(--tan);
+--back-color-soft: var(--navy);
+--back-color-hard: var(--navy);
+
+}
