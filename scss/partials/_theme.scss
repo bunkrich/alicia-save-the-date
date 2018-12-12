@@ -3,10 +3,11 @@ body {
   font-weight: 100;
   text-align: center;
   display: grid;
-  height: 90vh; // color: $white;
-  // background: linear-gradient(-45deg, $tan, $pale, $peach, $pink, $coral, $peony);
-  // background-size: 400% 400%;
-  // animation: Gradient 15s ease infinite;
+  height: 90vh; 
+  color: var(--main-color);
+  background: linear-gradient(-45deg, $tan, $pale, $peach, $pink, $coral, $peony);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
 }
 
 h1,
@@ -20,22 +21,22 @@ h6 {
 
 h1 {
   font-weight: bold;
-  color: white;
+  color: var(--main-color);
 }
 
-// @keyframes Gradient {
-//     0% {
-//         background-position: 0% 50%
-//     }
-//     50% {
-//         background-position: 100% 50%
-//     }
-//     100% {
-//         background-position: 0% 50%
-//     }
-// }
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
 
-$break-nav: 700px;
+$break-nav: 550px;
 
 @mixin nav-sm {
   @media all and (max-width: $break-nav) {
@@ -50,147 +51,15 @@ $break-nav: 700px;
 }
 
 
-#main-nav, #main-nav2, #main-nav3 {
-  --main-color: navy;
-  --back-color: skyblue;
-  --accent-color: lightgreen;
-  --pop-color: coral;
-  --border: 2px solid transparent;
-  // background: lightcyan;
-  // ul{background: lightpink;}
-  //   li{background: lightsalmon;}
-      // a{background: lightyellow;}
-      }
-
-
-
 #main-nav {
-  display: flex;
-  ul {
-    // list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  li {
-    display: flex;
-  }
-  a {
-    transition: all .5s;
-    text-decoration: none;
-    color: var(--accent-color);
-  }
-
-  @include nav-lg {
-    justify-content: center;
-    li {
-      padding: .5em 0;
-      margin: 0 .5em;
-      border-bottom: var(--border);
-    }
-  }
-
-  @include nav-sm {
-    justify-content: flex-end;
-    ul {
-      flex-direction: column;
-      background: var(--back-color);
-    }
-    li {
-      margin: .5em 0;
-      border-left: var(--border);
-    }
-    a {
-      margin-left: 1em;
-      min-width: 10em;
-      text-align: left;
-    }
-  }
-
-  li:hover {
-    border-color: var(--pop-color);
-    a {
-      color: var(--main-color);
-      @include nav-sm {
-        font-weight: 900;
-      }
-    }
-  }
-}
-
-
-
-#main-nav2 {
-  display: grid;
-  ul {
-    padding: 0;
-    margin: 0;
-    display: grid;
-  }
-  li {
-    display: grid;
-  }
-  a {
-    transition: all .5s;
-    text-decoration: none;
-    color: var(--accent-color);
-  }
-
-  @include nav-lg {
-    ul {
-      justify-content: center;
-      grid-auto-flow: column;
-      grid-gap: 1em;
-    }
-    li {
-      padding: .5em 0;
-      border-bottom: var(--border);
-    }
-  }
-
-  @include nav-sm {
-    justify-content: flex-end;
-    ul {
-      flex-direction: column;
-      background: var(--back-color);
-    }
-    li {
-      margin: .5em 0;
-      border-left: var(--border);
-    }
-    a {
-      margin-left: 1em;
-      min-width: 10em;
-      text-align: left;
-    }
-  }
-
-  li:hover {
-    border-color: var(--pop-color);
-    a {
-      color: var(--main-color);
-      @include nav-sm {
-        font-weight: 900;
-      }
-    }
-  }
-}
-
-
-
-
-
-
-
-// ######
-#main-nav3 {
+  --border: 2px solid transparent;
+  --main-color: var(--white);
   display: grid;
   grid-gap: 1em;
   a {
     transition: all .5s;
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--main-color);
   }
   
   @include nav-lg {
@@ -215,8 +84,8 @@ $break-nav: 700px;
   }
 
   a:hover {
-    border-color: var(--pop-color);
-    color: var(--main-color);
+    --main-color: var(--navy);
+    border-color: var(--accent-color);
     @include nav-sm {
       font-weight: 900;
     }
